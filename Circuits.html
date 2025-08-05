@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circuits | The F1 Files</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/circuits.css">
+</head>
+<body id="top" class="d-flex flex-column min-vh-100">
+
+  <!-- Header -->
+   <header class="bg-red">
+    <div class="accessibility-controls container-fluid py-2 d-flex justify-content-end">
+      <button id="font-decrease" aria-label="Decrease font size" class="btn btn-sm btn-light me-1">A−</button>
+      <button id="font-increase" aria-label="Increase font size" class="btn btn-sm btn-light me-3">A+</button>
+      <!-- font size and font changer -->
+      <label for="font-selector" class="visually-hidden">Choose font</label>
+      <select id="font-selector" class="form-select form-select-sm w-auto">
+        <option value="Arial, sans-serif">Sans‑serif</option>
+        <option value="Georgia, serif">Serif</option>
+        <option value="'Helvetica Neue', Helvetica, Arial, sans-serif">Helvetica Neue</option>
+        <option value="Verdana, Geneva, sans-serif">Verdana</option>
+        <option value="'Courier New', monospace">Monospace</option>
+      </select>
+    </div>
+    <nav class="navbar navbar-dark bg-red container-fluid">
+      <a class="navbar-brand" href="index.html">
+      <img
+        src="assets/images/The (1).png"
+        alt="The F1 Files logo"
+        width="300"
+        class="d-inline-block align-text-top"
+      >
+      <span class="visually-hidden">The F1 Files</span>
+    </a>
+    <!-- navigation tabs -->
+    <ul class="nav nav-tabs nav-fill ms-auto w-50">
+      <li class="nav-item">
+        <a class="nav-link text-white fs-5" href="index.html">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fs-5" href="Teams.html">
+          Teams
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fs-5" href="Drivers.html">
+          Drivers
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-danger fs-5 active" aria-current="page" href="Circuits.html">
+          Circuits
+        </a>
+      </li>
+    </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="container flex-grow-1 py-5">
+    <h1 class="mb-4 text-center text-white">The F1 Circuits</h1>
+
+    <!-- Monza Circuit -->
+    <section class="row align-items-start mb-5">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img
+          src="https://storage.googleapis.com/pod_public/1300/137335.jpg"
+          alt="Monza Circuit Layout"
+          class="img-fluid rounded">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h2>Monza</h2>
+          <p><strong>Name:</strong> Autodromo Nazionale Monza</p>
+          <p><strong>Length:</strong> 5.793 km / 3.600 mi</p>
+          <p><strong>Turns:</strong> 11 – most notably Variante del Rettifilo, Curva Grande, the Lesmo pair, Variante Ascari, and Curva Alboreto.</p>
+          <p><strong>First Grand Prix:</strong> 1922</p>
+          <p><strong>Lap Record:</strong> 1 min 21.046 s (2004, Rubens Barrichello)</p>
+          <p><strong>Unique Feature:</strong> Long straights, three chicanes, limited run-off areas, etc.</p>
+          <p><strong>More:</strong> home race to Andrea Kimi Antonelli.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Silverstone Circuit -->
+    <section class="row align-items-start flex-column flex-md-row-reverse mb-5">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img
+          src="assets/images/silverstonecircuit.png"
+          alt="Silverstone Circuit Layout"
+          class="img-fluid rounded">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h2>Silverstone</h2>
+          <p><strong>Name:</strong> Silverstone Circuit</p>
+          <p><strong>Length:</strong> 5.891 km / 3.661 mi</p>
+          <p><strong>Turns:</strong> 18 – most notably Copse, Maggotts–Becketts, Chapel, and Stowe.</p>
+          <p><strong>First Grand Prix:</strong> 1948</p>
+          <p><strong>Lap Record:</strong> 1 min 27.097 s (2020, Max Verstappen)</p>
+          <p><strong>Unique Feature:</strong> Notoriously tricky weather, high-speed straights, built atop of RAF Silverstone, a WWII airfield, etc.</p>
+          <p><strong>More:</strong> home race to Lewis Hamilton, Lando Norris, George Russell, and Alex Albon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Monza Circuit -->
+    <section class="row align-items-start mb-5">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img
+          src="assets/images/MonacoCircuit.png"
+          alt="Monaco Circuit Layout"
+          class="img-fluid rounded">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h2>Monaco</h2>
+          <p><strong>Name:</strong> Circuit de Monaco</p>
+          <p><strong>Length:</strong> 3.337 km / 2.074 mi</p>
+          <p><strong>Turns:</strong> 19 – most notably Sainte Devote, Casino Square, Fairmont Hairpin, and Rascasse.</p>
+          <p><strong>First Grand Prix:</strong> 1929</p>
+          <p><strong>Lap Record:</strong> 1 min 12.909 s (2021, Lewis Hamilton)</p>
+          <p><strong>Unique Feature:</strong> Underground tunnel, no run‑off areas, big elevation changes.</p>
+          <p><strong>More:</strong> home race to Charles Leclerc.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-md-start py-4 mt-auto">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md">
+          <p class="mb-0 text-dark">
+            Stay Connected:
+            <a href="mailto:vivianaseibold2027@u.northwestern.edu">Email Us</a> |
+            <a href="https://instagram.com/thef1files" target="_blank">Instagram</a>
+          </p>
+        </div>
+        <div class="col-md-auto mt-3 mt-md-0">
+          <a href="#top" class="btn btn-outline-dark">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!-- JS  -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

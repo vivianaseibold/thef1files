@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color:  #abb1ba;
+}
+
+nav a {
+  font-size: 1.25rem;     
+  color: #fff;              
+  margin-right: 1.5rem;     
+  transition: color 0.2s;   
+}
+
+main h1 {
+  color: white;
+  font-size: 5rem;   
+}
+
+.circuit-info1,
+.circuit-info2 {
+  background-color: #fff;      
+  padding: 1rem;          
+  border-radius: 0.5rem;       
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.circuit1layout {
+  display: flex;             
+  align-items: flex-start;      
+  gap: 1rem;                   
+}
+
+.circuit1layout img {
+  flex-shrink: 0;              
+  width: 300px;   
+  height: auto;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.circuit-info1 {
+  flex: 1; 
+  margin-right: 1rem;                     
+}
+
+.circuit2layout {
+  display: flex; 
+  flex-direction: row-reverse;            
+  align-items: flex-start;      
+  gap: 1rem;                   
+}
+
+.circuit2layout img {
+  flex-shrink: 0;              
+  width: 300px;   
+  height: auto;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+.circuit-info2{
+  flex: 1;  
+   margin-left: 1rem;                    
+}
+
+
+footer p {
+  color: white;
+  font-size: 1.25rem; 
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: 1px solid;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+footer .backtotop {
+  color: white;
+  font-size: 1.25rem; 
+  margin-left: 1rem;
+  display: inline-block;        
+  margin-top: 1rem;            
+  padding: 0.5rem 1rem;        
+  border: 1px solid #fff;       
+  border-radius: 4px;         
+  text-decoration: none;                      
+  transition: background 0.2s;
+}
+.bg-red{
+  background-color: #FF1801;   
+}

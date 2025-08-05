@@ -1,0 +1,5 @@
+I implemented two interactive feature, a text resizer and a font changer. 
+
+The first feature has two buttons at the top of the page, one "A+" that increases the size of text of the page and one "A-" that decreases the size of text on the page. While Titles/Headers are not changed in size, any basic text is.
+
+The second feature is a drop down menu of different font options the user can switch the site to. I chose the five most basic fonts, this allows the user more accessibility incase certain fonts are more difficult to read than others.

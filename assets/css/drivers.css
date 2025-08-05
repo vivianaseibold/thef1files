@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-vector/abstract-arrow-background-white-gradient-technology-concept-vector_53876-140551.jpg?semt=ais_hybrid&w=740');
+  background-position: center center;
+  background-size: cover;  
+}
+nav a {
+  font-size: 1.25rem;     
+  color: black;              
+  margin-right: 1.5rem;     
+  transition: color 0.2s;   
+}
+
+.drivers-grid {
+  display: grid;                          
+  grid-template-columns: repeat(5, 1fr);   
+  grid-template-rows: repeat(2, auto);     
+  grid-auto-flow: row;                    
+  gap: 1.5rem;                      
+  max-width: 1200px;                
+  margin: 2rem auto;                       
+}
+
+.drivers-grid > div {
+  text-align: center;
+}
+
+.drivers-grid img {
+  display: block;
+  margin: 0 auto 0.5rem;
+  width: 100px;
+  height: auto;
+}
+
+.drivers-grid h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+footer p {
+  border-top: 1px solid;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+footer .backtotop {
+  display: inline-block;        
+  margin-top: 1rem;            
+  padding: 0.5rem 1rem;        
+  border: 1px solid #333;       
+  border-radius: 4px;         
+  text-decoration: none;       
+  color: #333;                
+  transition: background 0.2s;
+}
+.bg-red{
+  background-color: #FF1801;   
+}
