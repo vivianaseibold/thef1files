@@ -6,7 +6,7 @@ import "./assets/css/teams.css";
 
 export default function App() {
   return (
-    <main className="container flex-grow-1 py-5">
+    <main className="flex-grow-1 py-5">
       <h1 className="mb-4 text-center">The F1 Teams</h1>
       <section className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
         {teams.map((team, index) => (
@@ -17,9 +17,12 @@ export default function App() {
             home={team.home}
             since={team.since}
             drivers={team.drivers}
+            teamPrincipal={team.teamPrincipal}
             bannerImage={team.bannerImage}
             carImage={team.carImage}
+            about={team.about}
             funFacts={team.funFacts}
+            background={team.background}
           />
         ))}
       </section>

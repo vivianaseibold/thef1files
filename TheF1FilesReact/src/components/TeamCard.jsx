@@ -1,6 +1,5 @@
 //firstly importing useState which tracks whether the popup is being used or not
 import React, { useState } from "react";
-import ferrariLogo from "../assets/images/ferrarilogo.png"
 
 //define TeamCard Components and passes in Data from teams.js
 //false means the popup is mot open, which should be the default state!
@@ -10,9 +9,12 @@ export default function TeamCard({
   home,
   since,
   drivers,
-  bannerImage, // new
-  carImage,    // new
-  funFacts     // new
+  teamPrincipal,
+  bannerImage, 
+  carImage,
+  about,    
+  funFacts,
+  background    
 }) {
   const [showDetails, setShowDetails] = useState(false);
 
@@ -26,7 +28,7 @@ export default function TeamCard({
       >
         <div className="bg-light p-4 rounded shadow-sm h-100 text-center">
           <img
-            src={name === "Ferrari" ? ferrariLogo : logo}
+            src={logo}
             alt={`${name} logo`}
             className="img-fluid mx-auto"
             style={{ maxWidth: "100px" }}
@@ -42,7 +44,14 @@ export default function TeamCard({
         <div
           className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex align-items-center justify-content-center"
           onClick={() => setShowDetails(false)}
-          style={{ zIndex: 9999 }}
+          style={{
+            zIndex: 9999,
+            backgroundImage: `url(${background})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgba(0, 0, 0, 0.75)'
+          }}
         >
           <div
             className="bg-white p-4 rounded shadow"
@@ -63,6 +72,7 @@ export default function TeamCard({
             <p><strong>Headquarters:</strong> {home}</p>
             <p><strong>F1 Debut:</strong> {since}</p>
             <p><strong>Driver Lineup:</strong> {drivers}</p>
+            <p><strong>Team Principal:</strong> {teamPrincipal}</p>
 
             <img
               src={carImage}
@@ -70,6 +80,8 @@ export default function TeamCard({
               className="img-fluid rounded my-3"
               style={{ maxHeight: "200px", objectFit: "cover" }}
             />
+
+            <p><strong>About:</strong> {about}</p>
 
             {funFacts && (
               <>

@@ -1,10 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";       // your top‐level component
+import "./index.css";              // any global styles
+import "bootstrap/dist/css/bootstrap.min.css";  // if you’re using Bootstrap
+// (optional) import your teams.css here if you moved it into src:
+// import "./assets/css/teams.css";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
