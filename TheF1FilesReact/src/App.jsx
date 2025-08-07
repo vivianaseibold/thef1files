@@ -10,6 +10,7 @@ export default function App() {
   return (
     <div className="d-flex flex-column min-vh-100" id="top">
       <Header />
+
       <main className="container flex-grow-1 py-5">
         <h1 className="mb-4 text-center">The F1 Teams</h1>
         <section className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
@@ -31,6 +32,7 @@ export default function App() {
           ))}
         </section>
       </main>
+
       <Footer />
     </div>
   );
