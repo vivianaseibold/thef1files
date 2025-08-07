@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="bg-red">
+    <header className="bg-red w-100">
       <div className="accessibility-controls container-fluid py-2 d-flex justify-content-end">
         <button id="font-decrease" aria-label="Decrease font size" className="btn btn-sm btn-light me-1">A−</button>
         <button id="font-increase" aria-label="Increase font size" className="btn btn-sm btn-light me-3">A+</button>

@@ -8,7 +8,7 @@ import "./assets/css/teams.css";
 
 export default function App() {
   return (
-    <div className="d-flex flex-column min-vh-100" id="top">
+    <div className="d-flex flex-column min-vh-100 w-100" id="top">
       <Header />
       <main className="container flex-grow-1 py-5">
         <h1 className="mb-4 text-center">The F1 Teams</h1>
